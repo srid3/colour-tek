@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Menu, X, ChevronDown } from 'lucide-react';
 
 const Navbar = () => {
@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <img src="/logo.svg" alt="Nippon Paint Neo" className="h-12" />
+            <img src="/logo-no-bg.png" alt="colourtek" className="h-12" />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

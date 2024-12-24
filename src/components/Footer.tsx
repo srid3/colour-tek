@@ -1,4 +1,3 @@
-import React from 'react';
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
 const Footer = () => {
@@ -7,7 +6,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">About Neo</h3>
+            <h3 className="text-xl font-bold mb-4">About Colourtek</h3>
             <p className="text-gray-400">
               Leading the way in innovative paint solutions with superior quality and sustainable practices.
             </p>
@@ -53,7 +52,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Nippon Paint Neo. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Colourtek. All rights reserved.</p>
         </div>
       </div>
     </footer>

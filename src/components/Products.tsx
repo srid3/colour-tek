@@ -1,19 +1,17 @@
-import React from 'react';
-
 const Products = () => {
   const products = [
     {
-      name: "Neo Xtreme Clean",
+      name: "Xtreme Clean",
       image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80",
       description: "Premium washable interior emulsion"
     },
     {
-      name: "Neo Weather Shield",
+      name: "Weather Shield",
       image: "https://images.unsplash.com/photo-1562259934-1e4fc1aa9d02?auto=format&fit=crop&q=80",
       description: "Advanced exterior wall paint"
     },
     {
-      name: "Neo Eco Fresh",
+      name: "Eco Fresh",
       image: "https://images.unsplash.com/photo-1562259950-a14110983a2e?auto=format&fit=crop&q=80",
       description: "Low VOC interior paint"
     }
