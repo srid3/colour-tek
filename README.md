@@ -20,3 +20,7 @@ npm install
 ```shell
 npm run dev
 ```
+
+---
+
+[Netlify Page](https://colour-tek.netlify.app/)
