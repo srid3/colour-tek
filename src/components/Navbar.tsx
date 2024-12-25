@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center">
-            <img src="/logo.svg" alt="Colourtek " className="h-12" />
+            <img src="/logo.png" alt="Colourtek" className="h-12"/>
           </Link>
           
           <div className="hidden md:flex items-center space-x-8">
