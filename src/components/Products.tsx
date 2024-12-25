@@ -1,18 +1,20 @@
+import React from 'react';
+
 const Products = () => {
   const products = [
     {
-      name: "Xtreme Clean",
+      name: "ColourTek Xtreme Clean",
       image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80",
       description: "Premium washable interior emulsion"
     },
     {
-      name: "Weather Shield",
-      image: "https://images.unsplash.com/photo-1562259934-1e4fc1aa9d02?auto=format&fit=crop&q=80",
+      name: "ColourTek Weather Shield",
+      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
       description: "Advanced exterior wall paint"
     },
     {
-      name: "Eco Fresh",
-      image: "https://images.unsplash.com/photo-1562259950-a14110983a2e?auto=format&fit=crop&q=80",
+      name: "ColourTek Eco Fresh",
+      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
       description: "Low VOC interior paint"
     }
   ];

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Shield, Droplets, Heart, Sun } from 'lucide-react';
 
 const Features = () => {

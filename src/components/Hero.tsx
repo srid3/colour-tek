@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Hero = () => {
   return (
     <div className="relative h-screen">
@@ -12,7 +14,7 @@ const Hero = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
         <div className="text-white max-w-2xl">
-          <h1 className="text-5xl font-bold mb-6">Transform Your Space with Neo</h1>
+          <h1 className="text-5xl font-bold mb-6">Transform Your Space with ColourTek</h1>
           <p className="text-xl mb-8">Experience the perfect blend of innovation and aesthetics with our premium paint solutions.</p>
           <div className="space-x-4">
             <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">
