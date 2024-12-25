@@ -1,4 +1,3 @@
-import React from 'react';
 import { Shield, Home, Building2, Factory } from 'lucide-react';
 
 const Solutions = () => {

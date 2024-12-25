@@ -7,7 +7,7 @@ import Colours from './pages/Colours';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import WhereToBuy from './pages/WhereToBuy';
-import ProductDetails from './pages/ProductDetails';
+// import ProductDetails from './pages/ProductDetails';
 import ColourVisualizer from './pages/ColourVisualizer';
 import Interior from './pages/products/Interior';
 import Exterior from './pages/products/Exterior';
@@ -25,7 +25,7 @@ function App() {
           <Route path="products/exterior" element={<Exterior />} />
           <Route path="products/wood-metal" element={<WoodMetal />} />
           <Route path="products/waterproofing" element={<Waterproofing />} />
-          <Route path="products/:id" element={<ProductDetails />} />
+          {/* <Route path="products/:id" element={<ProductDetails />} /> */}
           <Route path="solutions" element={<Solutions />} />
           <Route path="colours" element={<Colours />} />
           <Route path="colour-visualizer" element={<ColourVisualizer />} />
