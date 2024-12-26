@@ -2,23 +2,23 @@ const Products = () => {
   const products = [
     {
       name: "ColourTek Xtreme Clean",
-      image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80",
+      image: "./xtreamclean.jpg",
       description: "Premium washable interior emulsion"
     },
     {
       name: "ColourTek Weather Shield",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+      image: "./weathershield.jpg",
       description: "Advanced exterior wall paint"
     },
     {
       name: "ColourTek Eco Fresh",
-      image: "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
+      image: "./ecofresh.jpg",
       description: "Low VOC interior paint"
     }
   ];
 
   return (
-    <div className="py-20">
+    <div className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Our Products</h2>
