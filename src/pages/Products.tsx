@@ -6,8 +6,7 @@ const Products = () => {
     {
       name: "Interior Paints",
       description: "Premium paints for your indoor spaces",
-      image:
-        "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80",
+      image: "./interior.jpg",
       products: [
         { name: "Colourtek Xtreme Clean", type: "Premium Emulsion" },
         { name: "Colourtek Fresh", type: "Anti-bacterial Paint" },
@@ -17,8 +16,7 @@ const Products = () => {
     {
       name: "Exterior Paints",
       description: "Weather-resistant paints for lasting protection",
-      image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+      image: "./exterior.jpg",
       products: [
         { name: "Colourtek Weather Shield", type: "Exterior Emulsion" },
         { name: "Colourtek Shield", type: "All-Weather Protection" },
@@ -26,10 +24,9 @@ const Products = () => {
       ],
     },
     {
-      name: "Wood Metal",
+      name: "Wood & Metal",
       description: "Specialized coatings for wood and metal surfaces",
-      image:
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
+      image: "./woodmetal.jpg",
       products: [
         { name: "Colourtek Wood Guard", type: "Wood Protection" },
         { name: "Colourtek Metal Shield", type: "Anti-rust Coating" },
@@ -39,11 +36,11 @@ const Products = () => {
     {
       name: "Waterproofing",
       description: "Innovative solutions for waterproofing needs",
-      image:
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
+      image: "waterproof.jpg",
       products: [
         { name: "ColourTek Roof Seal", type: "Leak Protection" },
         { name: "ColourTek Wall Shield", type: "Crack Bridging" },
+        { name: "ColourTek HydroGuard", type: "Deep Protection" }
       ],
     },
   ];
@@ -68,7 +65,7 @@ const Products = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="bg-gray-50 pt-20">
       {/* Hero Section */}
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
@@ -91,7 +88,8 @@ const Products = () => {
       </div>
 
       {/* Product Categories */}
-      <div className="max-w-7xl mx-auto px-4 mb-20">
+      <div className="max-w-7xl mx-auto px-4 mb-4">
+        <h1 className="text-4xl font-bold mb-8">All Products</h1>
         <div className="grid md:grid-cols-3 gap-8">
           {categories.map((category, index) => (
             <div
@@ -115,12 +113,12 @@ const Products = () => {
                   ))}
                 </ul>
                 <Link
-                  to={`/products/${category.name
-    .split(" ")[0]
-    .toLowerCase()
-    .replace(/\s+/g, "-")}`}
-                  className="block text-center bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700"
-                >
+  to={`/products/${category.name === "Wood & Metal"
+    ? "wood-and-metal" // Use full name for Wood Metal
+    : category.name.split(" ")[0].toLowerCase() // Use first word for others
+  }`}
+  className="block text-center bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700"
+>
                   View Products
                 </Link>
               </div>

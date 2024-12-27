@@ -1,7 +1,11 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Palette } from 'lucide-react';
 
 const ColourInspiration = () => {
+  // Store selected color for each theme using an object
+  const [selectedColors, setSelectedColors] = useState<{ [key: string]: string }>({});
+
   const colourThemes = [
     {
       name: "Modern Minimalist",
@@ -20,8 +24,15 @@ const ColourInspiration = () => {
     }
   ];
 
+  const handleColorClick = (themeName: string, color: string) => {
+    setSelectedColors((prevSelectedColors) => ({
+      ...prevSelectedColors,
+      [themeName]: color,
+    }));
+  };
+
   return (
-    <div className="py-20 bg-gray-50">
+    <div className="py-12 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Colour Inspiration</h2>
@@ -33,19 +44,31 @@ const ColourInspiration = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {colourThemes.map((theme, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
-                src={theme.image}
-                alt={theme.name}
-                className="w-full h-48 object-cover"
-              />
+              <div className="relative">
+                <img
+                  src={theme.image}
+                  alt={theme.name}
+                  className="w-full h-48 object-cover"
+                />
+                {selectedColors[theme.name] && (
+                  <div
+                    className="absolute top-0 left-0 w-full h-full"
+                    style={{
+                      backgroundColor: selectedColors[theme.name],
+                      opacity: 0.5, // Adjust opacity to control the strength of the overlay
+                    }}
+                  />
+                )}
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4">{theme.name}</h3>
                 <div className="flex space-x-2 mb-6">
                   {theme.colors.map((color, i) => (
                     <div
                       key={i}
-                      className="w-8 h-8 rounded-full"
+                      className="w-8 h-8 rounded-full cursor-pointer"
                       style={{ backgroundColor: color }}
+                      onClick={() => handleColorClick(theme.name, color)}
                     />
                   ))}
                 </div>
