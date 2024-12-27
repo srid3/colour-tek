@@ -26,7 +26,7 @@ const Products = () => {
       ],
     },
     {
-      name: "Wood & Metal",
+      name: "Wood Metal",
       description: "Specialized coatings for wood and metal surfaces",
       image:
         "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
@@ -34,6 +34,16 @@ const Products = () => {
         { name: "Colourtek Wood Guard", type: "Wood Protection" },
         { name: "Colourtek Metal Shield", type: "Anti-rust Coating" },
         { name: "Colourtek Gloss", type: "High Gloss Enamel" },
+      ],
+    },
+    {
+      name: "Waterproofing",
+      description: "Innovative solutions for waterproofing needs",
+      image:
+        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
+      products: [
+        { name: "ColourTek Roof Seal", type: "Leak Protection" },
+        { name: "ColourTek Wall Shield", type: "Crack Bridging" },
       ],
     },
   ];
@@ -106,8 +116,9 @@ const Products = () => {
                 </ul>
                 <Link
                   to={`/products/${category.name
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")}`}
+    .split(" ")[0]
+    .toLowerCase()
+    .replace(/\s+/g, "-")}`}
                   className="block text-center bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700"
                 >
                   View Products

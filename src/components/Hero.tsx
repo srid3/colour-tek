@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+
+
 const Hero = () => {
   return (
     <div className="relative h-screen">
@@ -14,10 +17,10 @@ const Hero = () => {
         <div className="text-white max-w-2xl">
           <h1 className="text-5xl font-bold mb-6">Transform Your Space with ColourTek</h1>
           <p className="text-xl mb-8">Experience the perfect blend of innovation and aesthetics with our premium paint solutions.</p>
-          <div className="space-x-4">
-            <button className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">
+          <div className="space-x-4 space-y-4">
+            <Link to={'/products'} className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">
               Explore Products
-            </button>
+            </Link>
             <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-black">
               Find a Store
             </button>
