@@ -8,7 +8,7 @@ const Exterior = () => {
       id: 'weather-shield',
       name: 'ColourTek Weather Shield',
       description: 'Advanced exterior paint with superior weather protection',
-      image: '../exterior1.jpg',
+      image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80',
       features: [
         { icon: <Shield />, title: 'Weather Resistant' },
         { icon: <Sun />, title: 'UV Protection' },
@@ -21,7 +21,7 @@ const Exterior = () => {
       id: 'exterior-shield',
       name: 'ColourTek Exterior Shield',
       description: 'Long-lasting exterior paint with anti-algal properties',
-      image: '../exterior2.jpg',
+      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80',
       features: [
         { icon: <Shield />, title: 'Anti-Algal' },
         { icon: <Sun />, title: 'Color Lock' },

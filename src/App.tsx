@@ -23,7 +23,7 @@ function App() {
           <Route path="products" element={<Products />} />
           <Route path="products/interior" element={<Interior />} />
           <Route path="products/exterior" element={<Exterior />} />
-          <Route path="products/wood-and-metal" element={<WoodMetal />} />
+          <Route path="products/woodmetal" element={<WoodMetal />} />
           <Route path="products/waterproofing" element={<Waterproofing />} />
           {/* <Route path="products/:id" element={<ProductDetails />} /> */}
           <Route path="solutions" element={<Solutions />} />

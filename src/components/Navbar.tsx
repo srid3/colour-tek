@@ -14,7 +14,7 @@ const Navbar = () => {
       submenu: [
         { name: 'Interior Paints', path: '/products/interior' },
         { name: 'Exterior Paints', path: '/products/exterior' },
-        { name: 'Wood & Metal', path: '/products/wood-and-metal' },
+        { name: 'Wood & Metal', path: '/products/woodmetal' },
         { name: 'Waterproofing', path: '/products/waterproofing' }
       ]
     },
