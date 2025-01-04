@@ -10,7 +10,7 @@ const ColourInspiration = () => {
     },
     {
       name: "Natural Harmony",
-      image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80",
+      image: "/photo-1600585154526-990dced4db0d.avif",
       colors: ["#A8C69F", "#E3D9CA", "#B6A48B", "#8B7355"]
     },
     {
