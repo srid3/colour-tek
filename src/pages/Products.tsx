@@ -6,7 +6,7 @@ const Products = () => {
     {
       name: "Interior Paints",
       description: "Premium paints for your indoor spaces",
-      image: "./interior.jpg",
+      image: "./interior.avif",
       products: [
         { name: "Colourtek Xtreme Clean", type: "Premium Emulsion" },
         { name: "Colourtek Fresh", type: "Anti-bacterial Paint" },
@@ -16,7 +16,7 @@ const Products = () => {
     {
       name: "Exterior Paints",
       description: "Weather-resistant paints for lasting protection",
-      image: "./exterior.jpg",
+      image: "./exterior.avif",
       products: [
         { name: "Colourtek Weather Shield", type: "Exterior Emulsion" },
         { name: "Colourtek Shield", type: "All-Weather Protection" },
@@ -26,7 +26,7 @@ const Products = () => {
     {
       name: "Wood & Metal",
       description: "Specialized coatings for wood and metal surfaces",
-      image: "./woodmetal.jpg",
+      image: "./woodmetal.avif",
       products: [
         { name: "Colourtek Wood Guard", type: "Wood Protection" },
         { name: "Colourtek Metal Shield", type: "Anti-rust Coating" },
@@ -36,7 +36,7 @@ const Products = () => {
     {
       name: "Waterproofing",
       description: "Innovative solutions for waterproofing needs",
-      image: "waterproof.jpg",
+      image: "waterproof.avif",
       products: [
         { name: "ColourTek Roof Seal", type: "Leak Protection" },
         { name: "ColourTek Wall Shield", type: "Crack Bridging" },

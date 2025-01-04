@@ -43,7 +43,7 @@ const Solutions = () => {
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
           <img
-            src="../solution.png"
+            src="../solution.avif"
             alt="Solutions Banner"
             className="w-full h-full object-cover"
           />

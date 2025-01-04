@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center">
-            <img src="/logo.png" alt="Colourtek" className="h-12" />
+            <img src="/logo.avif" alt="Colourtek" className="h-12" />
             <div className="flex flex-col items-center mt-3">
               <h1 className="text-3xl font-bold">olour Tek</h1>
               <div className="w-full h-0.5 bg-yellow-400"></div>

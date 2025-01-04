@@ -8,7 +8,7 @@ const Waterproofing = () => {
       id: 'roof-seal',
       name: 'ColourTek Roof Seal',
       description: 'Advanced roof waterproofing solution',
-      image: '../waterproof1.jpg',
+      image: '../waterproof1.avif',
       features: [
         { icon: <Shield />, title: 'Leak Protection' },
         { icon: <Droplets />, title: 'Water Resistant' },
@@ -21,7 +21,7 @@ const Waterproofing = () => {
       id: 'wall-shield',
       name: 'ColourTek Wall Shield',
       description: 'Exterior wall waterproofing coating',
-      image: '../waterproof2.jpg',
+      image: '../waterproof2.avif',
       features: [
         { icon: <Shield />, title: 'Crack Bridging' },
         { icon: <Droplets />, title: 'Moisture Guard' },
