@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 type ProductHeroProps = {
   title: string;
   description: string;
@@ -8,7 +10,7 @@ const ProductHero = ({ title, description, image }: ProductHeroProps) => {
   return (
     <div className="relative h-[400px] mb-16">
       <div className="absolute inset-0">
-        <img
+        <LazyLoadImage
           src={image}
           alt={title}
           className="w-full h-full object-cover"

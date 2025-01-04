@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Palette } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ColourInspiration = () => {
-  // Store selected color for each theme using an object
   const [selectedColors, setSelectedColors] = useState<{ [key: string]: string }>({});
 
   const colourThemes = [
@@ -45,7 +45,7 @@ const ColourInspiration = () => {
           {colourThemes.map((theme, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative">
-                <img
+                <LazyLoadImage
                   src={theme.image}
                   alt={theme.name}
                   className="w-full h-48 object-cover"

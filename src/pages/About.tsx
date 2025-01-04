@@ -1,4 +1,5 @@
 import { Shield, Users, Leaf, Award } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const About = () => {
   const milestones = [
@@ -37,7 +38,7 @@ const About = () => {
       {/* Hero Section */}
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
-          <img
+          <LazyLoadImage
             src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&q=80"
             alt="About Us Banner"
             className="w-full h-full object-cover"
@@ -123,7 +124,7 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[1, 2, 3].map((_, index) => (
               <div key={index} className="text-center">
-                <img
+                <LazyLoadImage
                   src={`https://images.unsplash.com/photo-${
                     index === 0
                       ? '1560250097-0b93528c311a'

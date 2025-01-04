@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Palette, Heart, Download } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Colours = () => {
   const [selectedCategory, setSelectedCategory] = useState('all');
@@ -61,7 +62,7 @@ const Colours = () => {
       {/* Hero Section */}
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
-          <img
+          <LazyLoadImage
             src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&q=80"
             alt="Colours Banner"
             className="w-full h-full object-cover"
@@ -110,7 +111,7 @@ const Colours = () => {
           {filteredColours.map((colour, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48">
-                <img
+                <LazyLoadImage
                   src={colour.image}
                   alt={colour.name}
                   className="w-full h-full object-cover"

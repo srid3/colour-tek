@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown, Search, ShoppingBag } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center">
-            <img src="/logo.avif" alt="Colourtek" className="h-12" />
+            <LazyLoadImage src="/logo.avif" alt="Colourtek" className="h-12" />
             <div className="flex flex-col items-center mt-3">
               <h1 className="text-3xl font-bold">olour Tek</h1>
               <div className="w-full h-0.5 bg-yellow-400"></div>

@@ -1,4 +1,5 @@
 import { Shield, Home, Building2, Factory } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Solutions = () => {
   const solutions = [
@@ -42,7 +43,7 @@ const Solutions = () => {
       {/* Hero Section */}
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
-          <img
+          <LazyLoadImage
             src="../solution.avif"
             alt="Solutions Banner"
             className="w-full h-full object-cover"
@@ -89,7 +90,7 @@ const Solutions = () => {
           <h2 className="text-3xl font-bold text-center mb-12">Success Stories</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
+              <LazyLoadImage
                 src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80"
                 alt="Commercial Project"
                 className="w-full h-64 object-cover"
@@ -106,7 +107,7 @@ const Solutions = () => {
               </div>
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-              <img
+              <LazyLoadImage
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
                 alt="Industrial Project"
                 className="w-full h-64 object-cover"

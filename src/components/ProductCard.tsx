@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Shield } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export type ProductFeature = {
   icon: React.ReactNode;
@@ -20,7 +21,7 @@ export type Product = {
 const ProductCard = ({ product }: { product: Product }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <img
+      <LazyLoadImage
         src={product.image}
         alt={product.name}
         className="w-full h-64 object-cover"

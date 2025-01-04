@@ -1,4 +1,5 @@
 import { Star } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Testimonials = () => {
   const testimonials = [
@@ -39,7 +40,7 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-white p-8 rounded-lg shadow-lg">
               <div className="flex items-center mb-6">
-                <img
+                <LazyLoadImage
                   src={testimonial.image}
                   alt={testimonial.name}
                   className="w-16 h-16 rounded-full object-cover mr-4"

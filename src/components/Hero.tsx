@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Hero = () => {
   return (
     <div className="relative h-screen">
       <div className="absolute inset-0">
-        <img
+        <LazyLoadImage
           src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80"
           alt="Interior Design"
           className="w-full h-full object-cover"

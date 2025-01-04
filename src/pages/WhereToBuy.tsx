@@ -1,5 +1,6 @@
 // import { useState } from 'react';
 // import { MapPin, Phone, Clock, Star } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const WhereToBuy = () => {
   // const [searchQuery] = useState('');
@@ -37,7 +38,7 @@ const WhereToBuy = () => {
       {/* Hero Section */}
       <div className="relative h-[300px] mb-16">
         <div className="absolute inset-0">
-          <img
+          <LazyLoadImage
             src="https://images.unsplash.com/photo-1613082442324-62ef5249275e?auto=format&fit=crop&q=80"
             alt="Store Locator Banner"
             className="w-full h-full object-cover"

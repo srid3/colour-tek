@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Shield, Droplets, Sun } from "lucide-react";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Products = () => {
   const categories = [
@@ -69,7 +70,7 @@ const Products = () => {
       {/* Hero Section */}
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
-          <img
+          <LazyLoadImage
             src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80"
             alt="Products Banner"
             className="w-full h-full object-cover"
@@ -96,7 +97,7 @@ const Products = () => {
               key={index}
               className="bg-white rounded-lg shadow-lg overflow-hidden"
             >
-              <img
+              <LazyLoadImage
                 src={category.image}
                 alt={category.name}
                 className="w-full h-48 object-cover"

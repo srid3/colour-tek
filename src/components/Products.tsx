@@ -1,3 +1,5 @@
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 const Products = () => {
   const products = [
     {
@@ -30,7 +32,7 @@ const Products = () => {
         <div className="grid md:grid-cols-3 gap-8">
           {products.map((product, index) => (
             <div key={index} className="group relative overflow-hidden rounded-lg shadow-lg">
-              <img
+              <LazyLoadImage
                 src={product.image}
                 alt={product.name}
                 className="w-full h-80 object-cover transform group-hover:scale-110 transition-transform duration-300"

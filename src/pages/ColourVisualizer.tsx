@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Upload, Camera, Palette, RotateCcw } from 'lucide-react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const ColourVisualizer = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -41,7 +42,7 @@ const ColourVisualizer = () => {
           <div className="md:col-span-2">
             {selectedImage ? (
               <div className="relative rounded-lg overflow-hidden">
-                <img
+                <LazyLoadImage
                   src={selectedImage}
                   alt="Room Preview"
                   className="w-full h-[600px] object-cover"
