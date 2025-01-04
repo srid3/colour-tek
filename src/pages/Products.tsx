@@ -115,8 +115,8 @@ const Products = () => {
                 </ul>
                 <Link
   to={`/products/${category.name === "Wood & Metal"
-    ? "wood-and-metal" // Use full name for Wood Metal
-    : category.name.split(" ")[0].toLowerCase() // Use first word for others
+    ? "wood-and-metal" 
+    : category.name.split(" ")[0].toLowerCase()
   }`}
   className="block text-center bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700"
 >

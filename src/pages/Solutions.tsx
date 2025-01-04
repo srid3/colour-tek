@@ -39,7 +39,7 @@ const Solutions = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="bg-gray-50 pt-20">
       {/* Hero Section */}
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
