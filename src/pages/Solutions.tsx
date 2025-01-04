@@ -45,6 +45,8 @@ const Solutions = () => {
         <div className="absolute inset-0">
           <LazyLoadImage
             src="../solution.avif"
+          <img
+            src="https://images.unsplash.com/photo-1581094794329-c8112c4e5190?auto=format&fit=crop&q=80"
             alt="Solutions Banner"
             className="w-full h-full object-cover"
           />
