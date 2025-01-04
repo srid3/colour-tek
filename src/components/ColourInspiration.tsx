@@ -14,7 +14,7 @@ const ColourInspiration = () => {
     },
     {
       name: "Natural Harmony",
-      image: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&q=80",
+      image: "/photo-1600585154526-990dced4db0d.avif",
       colors: ["#A8C69F", "#E3D9CA", "#B6A48B", "#8B7355"]
     },
     {
@@ -24,15 +24,8 @@ const ColourInspiration = () => {
     }
   ];
 
-  const handleColorClick = (themeName: string, color: string) => {
-    setSelectedColors((prevSelectedColors) => ({
-      ...prevSelectedColors,
-      [themeName]: color,
-    }));
-  };
-
   return (
-    <div className="py-12 bg-gray-50">
+    <div className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">Colour Inspiration</h2>
@@ -60,15 +53,19 @@ const ColourInspiration = () => {
                   />
                 )}
               </div>
+              <img
+                src={theme.image}
+                alt={theme.name}
+                className="w-full h-48 object-cover"
+              />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-4">{theme.name}</h3>
                 <div className="flex space-x-2 mb-6">
                   {theme.colors.map((color, i) => (
                     <div
                       key={i}
-                      className="w-8 h-8 rounded-full cursor-pointer"
+                      className="w-8 h-8 rounded-full"
                       style={{ backgroundColor: color }}
-                      onClick={() => handleColorClick(theme.name, color)}
                     />
                   ))}
                 </div>

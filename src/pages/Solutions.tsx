@@ -43,8 +43,8 @@ const Solutions = () => {
       {/* Hero Section */}
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
-          <LazyLoadImage
-            src="../solution.avif"
+          <img
+            src="../solution.png"
             alt="Solutions Banner"
             className="w-full h-full object-cover"
           />
