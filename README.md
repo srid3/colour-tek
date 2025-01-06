@@ -1,5 +1,9 @@
 # Colour Tek
 
+## Requirements
+Node - 22.5.1
+npm - 10.8.2
+
 ## Setup
 
 1) Fork the Repository
