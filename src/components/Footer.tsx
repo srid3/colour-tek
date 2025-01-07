@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -15,10 +16,10 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="/products" className="text-gray-400 hover:text-white">Products</a></li>
-              <li><a href="/colours" className="text-gray-400 hover:text-white">Colour Selection</a></li>
-              <li><a href="/where-to-buy" className="text-gray-400 hover:text-white">Where to Buy</a></li>
-              <li><a href="/contact" className="text-gray-400 hover:text-white">Contact Us</a></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white">Products</Link></li>
+              <li><Link to="/colours" className="text-gray-400 hover:text-white">Colour Selection</Link></li>
+              <li><Link to="/where-to-buy" className="text-gray-400 hover:text-white">Where to Buy</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white">Contact Us</Link></li>
             </ul>
           </div>
           
@@ -45,9 +46,9 @@ const Footer = () => {
           <p>&copy; {new Date().getFullYear()} ColourTek Paints. All rights reserved.</p>
           <div className="mt-4">
             <ul className="flex justify-center space-x-6">
-              <li><a href="/privacy-policy" className="hover:text-white">Privacy Policy</a></li>
-              <li><a href="/terms-and-conditions" className="hover:text-white">Terms and Conditions</a></li>
-              <li><a href="/sitemap" className="hover:text-white">Site Map</a></li>
+              <li><Link to="/privacy-policy" className="hover:text-white">Privacy Policy</Link></li>
+              <li><Link to="/terms-and-conditions" className="hover:text-white">Terms and Conditions</Link></li>
+              <li><Link to="/sitemap" className="hover:text-white">Site Map</Link></li>
             </ul>
           </div>
         </div>
