@@ -13,6 +13,8 @@ import Interior from './pages/products/Interior';
 import Exterior from './pages/products/Exterior';
 import Waterproofing from './pages/products/Waterproofing';
 import WoodMetal from './pages/products/WoodMetal';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsAndConditions from './pages/TermsAndConditions';
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           <Route path="where-to-buy" element={<WhereToBuy />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-and-conditions" element={<TermsAndConditions />} />
         </Route>
       </Routes>
     </BrowserRouter>

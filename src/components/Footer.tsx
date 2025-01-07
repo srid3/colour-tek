@@ -15,20 +15,20 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">Products</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Colour Selection</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Where to Buy</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Contact Us</a></li>
+              <li><a href="/products" className="text-gray-400 hover:text-white">Products</a></li>
+              <li><a href="/colours" className="text-gray-400 hover:text-white">Colour Selection</a></li>
+              <li><a href="/where-to-buy" className="text-gray-400 hover:text-white">Where to Buy</a></li>
+              <li><a href="/contact" className="text-gray-400 hover:text-white">Contact Us</a></li>
             </ul>
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Support</h3>
+            <h3 className="text-xl font-bold mb-4">Policies</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white">FAQs</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Technical Data</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Safety Data Sheets</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Painting Guide</a></li>
+              <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
+              <li><a href="/terms-and-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a></li>
+              {/* <li><a href="#" className="text-gray-400 hover:text-white">Safety Data Sheets</a></li>
+              <li><a href="#" className="text-gray-400 hover:text-white">Painting Guide</a></li> */}
             </ul>
           </div>
           
