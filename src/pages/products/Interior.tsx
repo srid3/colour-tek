@@ -8,7 +8,7 @@ const Interior = () => {
       id: 'premium-emulsion',
       name: 'ColourTek Premium Emulsion',
       description: 'Superior quality interior wall paint with excellent coverage and durability',
-      image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80',
+      image: 'https://ik.imagekit.io/colourtek/tr:w-1200/int.avif?updatedAt=1736271136937',
       features: [
         { icon: <Shield />, title: 'Superior Coverage' },
         { icon: <Droplets />, title: 'Washable' },
@@ -21,7 +21,7 @@ const Interior = () => {
       id: 'silk-luxury',
       name: 'ColourTek Silk Luxury',
       description: 'Luxurious silk finish paint for a smooth and elegant look',
-      image: 'https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80',
+      image: 'https://ik.imagekit.io/colourtek/tr:w-1200/int2.avif?updatedAt=1736271393264',
       features: [
         { icon: <Shield />, title: 'Silk Finish' },
         { icon: <Droplets />, title: 'Stain Resistant' },
@@ -37,7 +37,7 @@ const Interior = () => {
       <ProductHero
         title="Interior Paints"
         description="Transform your indoor spaces with our premium interior paint collection"
-        image="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?auto=format&fit=crop&q=80"
+        image="https://ik.imagekit.io/colourtek/tr:w-1200/interior.avif?updatedAt=1736271196230"
       />
       
       <div className="max-w-7xl mx-auto px-4 mb-20">

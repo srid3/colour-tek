@@ -8,7 +8,7 @@ const WoodMetal = () => {
       id: 'wood-guard',
       name: 'ColourTek Wood Guard',
       description: 'Premium wood finish for lasting protection and beauty',
-      image: 'https://images.unsplash.com/photo-1610505466122-b1fe0e911a57?auto=format&fit=crop&q=80',
+      image: 'https://ik.imagekit.io/colourtek/waterproof2.avif?updatedAt=1736268904040',
       features: [
         { icon: <Shield />, title: 'Deep Protection' },
         { icon: <Paintbrush />, title: 'Rich Finish' },
@@ -21,7 +21,7 @@ const WoodMetal = () => {
       id: 'metal-shield',
       name: 'ColourTek Metal Shield',
       description: 'Anti-corrosive paint for metal surfaces',
-      image: 'https://images.unsplash.com/photo-1530982011887-3cc11cc85693?auto=format&fit=crop&q=80',
+      image: 'https://ik.imagekit.io/colourtek/metal1.avif?updatedAt=1736268904360',
       features: [
         { icon: <Shield />, title: 'Rust Protection' },
         { icon: <Paintbrush />, title: 'Quick Dry' },
@@ -37,7 +37,7 @@ const WoodMetal = () => {
       <ProductHero
         title="Wood & Metal Paints"
         description="Specialized coatings for wood and metal surfaces"
-        image="https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?auto=format&fit=crop&q=80"
+        image="https://ik.imagekit.io/colourtek/woodmetal1.avif?updatedAt=1736268904665"
       />
       
       <div className="max-w-7xl mx-auto px-4 mb-20">

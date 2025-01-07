@@ -2,17 +2,17 @@ const Products = () => {
   const products = [
     {
       name: "ColourTek Xtreme Clean",
-      image: "./xtreamclean.jpg",
+      image: "https://ik.imagekit.io/colourtek/xtreamclean.avif?updatedAt=1736268899741",
       description: "Premium washable interior emulsion"
     },
     {
       name: "ColourTek Weather Shield",
-      image: "./weathershield.jpg",
+      image: "https://ik.imagekit.io/colourtek/weathershield.avif?updatedAt=1736268899621",
       description: "Advanced exterior wall paint"
     },
     {
       name: "ColourTek Eco Fresh",
-      image: "./ecofresh.jpg",
+      image: "https://ik.imagekit.io/colourtek/ecofresh.avif?updatedAt=1736268899923",
       description: "Low VOC interior paint"
     }
   ];

@@ -5,17 +5,17 @@ const ColourInspiration = () => {
   const colourThemes = [
     {
       name: "Modern Minimalist",
-      image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&q=80",
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/c1.avif?updatedAt=1736269674935",
       colors: ["#F5F5F5", "#E0E0E0", "#9E9E9E", "#424242"]
     },
     {
       name: "Natural Harmony",
-      image: "/photo-1600585154526-990dced4db0d.avif",
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/c2.avif?updatedAt=1736269675002",
       colors: ["#A8C69F", "#E3D9CA", "#B6A48B", "#8B7355"]
     },
     {
       name: "Urban Sophisticate",
-      image: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80",
+      image: "https://ik.imagekit.io/colourtek/interior2.avif?updatedAt=1736268904886",
       colors: ["#445878", "#92A8D1", "#F1F1F1", "#333333"]
     }
   ];

@@ -7,7 +7,7 @@ const Products = () => {
       name: "Interior Paints",
       description: "Premium paints for your indoor spaces",
       image:
-        "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80",
+        "https://ik.imagekit.io/colourtek/interior.avif?updatedAt=1736268904488",
       products: [
         { name: "Colourtek Xtreme Clean", type: "Premium Emulsion" },
         { name: "Colourtek Fresh", type: "Anti-bacterial Paint" },
@@ -18,7 +18,7 @@ const Products = () => {
       name: "Exterior Paints",
       description: "Weather-resistant paints for lasting protection",
       image:
-        "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80",
+        "https://ik.imagekit.io/colourtek/exterior1.avif?updatedAt=1736268900173",
       products: [
         { name: "Colourtek Weather Shield", type: "Exterior Emulsion" },
         { name: "Colourtek Shield", type: "All-Weather Protection" },
@@ -29,7 +29,7 @@ const Products = () => {
       name: "Wood Metal",
       description: "Specialized coatings for wood and metal surfaces",
       image:
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
+        "https://ik.imagekit.io/colourtek/woodmetal1.avif?updatedAt=1736268904665",
       products: [
         { name: "Colourtek Wood Guard", type: "Wood Protection" },
         { name: "Colourtek Metal Shield", type: "Anti-rust Coating" },
@@ -40,7 +40,7 @@ const Products = () => {
       name: "Waterproofing",
       description: "Innovative solutions for waterproofing needs",
       image:
-        "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&q=80",
+        "https://ik.imagekit.io/colourtek/waterproof1.avif?updatedAt=1736268904901",
       products: [
         { name: "ColourTek Roof Seal", type: "Leak Protection" },
         { name: "ColourTek Wall Shield", type: "Crack Bridging" },
@@ -73,7 +73,7 @@ const Products = () => {
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&q=80"
+            src="https://ik.imagekit.io/colourtek/tr:w-1200/productsPage.avif?updatedAt=1736270499001"
             alt="Products Banner"
             className="w-full h-full object-cover"
           />

@@ -43,7 +43,7 @@ const Solutions = () => {
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1581094794329-c8112c4e5190?auto=format&fit=crop&q=80"
+            src="https://ik.imagekit.io/colourtek/tr:w-1200/a%20porch%20with%20two%20chairs%20and....jpg?updatedAt=1736273736618"
             alt="Solutions Banner"
             className="w-full h-full object-cover"
           />
@@ -90,7 +90,7 @@ const Solutions = () => {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80"
+                src="https://ik.imagekit.io/colourtek/tr:w-1200/Moroccan%20jewel,%20hidden%20deep....jpg?updatedAt=1736273803192"
                 alt="Commercial Project"
                 className="w-full h-64 object-cover"
               />
@@ -107,7 +107,7 @@ const Solutions = () => {
             </div>
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80"
+                src="https://ik.imagekit.io/colourtek/tr:w-1200/Aged%20industrial%20complex%20nex....jpg?updatedAt=1736273880523"
                 alt="Industrial Project"
                 className="w-full h-64 object-cover"
               />

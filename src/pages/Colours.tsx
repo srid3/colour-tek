@@ -18,37 +18,37 @@ const Colours = () => {
       name: "Morning Mist",
       code: "#E8E8E8",
       category: "neutral",
-      image: "https://images.unsplash.com/photo-1598928636135-d146006ff4be?auto=format&fit=crop&q=80"
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/photo-1598928636135-d146006ff4be_auto=format&fit=crop&q=80?updatedAt=1736272314780"
     },
     {
       name: "Desert Sand",
       code: "#E5C7A3",
       category: "warm",
-      image: "https://images.unsplash.com/photo-1509005084666-3cbc75184cbb?auto=format&fit=crop&q=80"
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/photo-1509005084666-3cbc75184cbb_auto=format&fit=crop&q=80?updatedAt=1736272377556"
     },
     {
       name: "Ocean Blue",
       code: "#4F8CB6",
       category: "cool",
-      image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?auto=format&fit=crop&q=80"
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/photo-1505142468610-359e7d316be0_auto=format&fit=crop&q=80?updatedAt=1736272441560"
     },
     {
       name: "Forest Green",
       code: "#3C6E47",
       category: "cool",
-      image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80"
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/photo-1441974231531-c6227db76b6e_auto=format&fit=crop&q=80?updatedAt=1736272458354"
     },
     {
       name: "Sunset Orange",
       code: "#F4845F",
       category: "warm",
-      image: "https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&q=80"
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/photo-1472120435266-53107fd0c44a_auto=format&fit=crop&q=80?updatedAt=1736272475710"
     },
     {
       name: "Royal Purple",
       code: "#7B4B94",
       category: "bold",
-      image: "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80"
+      image: "https://ik.imagekit.io/colourtek/tr:w-1200/photo-1550684376-efcbd6e3f031_auto=format&fit=crop&q=80?updatedAt=1736272497053"
     }
   ];
 
@@ -62,7 +62,7 @@ const Colours = () => {
       <div className="relative h-[400px] mb-16">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1525909002-1b05e0c869d8?auto=format&fit=crop&q=80"
+            src="https://ik.imagekit.io/colourtek/tr:w-1200/photo-1525909002-1b05e0c869d8_auto=format&fit=crop&q=80?updatedAt=1736272224845"
             alt="Colours Banner"
             className="w-full h-full object-cover"
           />
