@@ -15,6 +15,7 @@ import Waterproofing from './pages/products/Waterproofing';
 import WoodMetal from './pages/products/WoodMetal';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
+import Sitemap from './pages/Sitemap';
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path="where-to-buy" element={<WhereToBuy />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} />
           <Route path="terms-and-conditions" element={<TermsAndConditions />} />
+          <Route path="sitemap" element={<Sitemap />} />
         </Route>
       </Routes>
     </BrowserRouter>

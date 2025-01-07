@@ -23,16 +23,6 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="text-xl font-bold mb-4">Policies</h3>
-            <ul className="space-y-2">
-              <li><a href="/privacy-policy" className="text-gray-400 hover:text-white">Privacy Policy</a></li>
-              <li><a href="/terms-and-conditions" className="text-gray-400 hover:text-white">Terms and Conditions</a></li>
-              {/* <li><a href="#" className="text-gray-400 hover:text-white">Safety Data Sheets</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white">Painting Guide</a></li> */}
-            </ul>
-          </div>
-          
-          <div>
             <h3 className="text-xl font-bold mb-4">Connect With Us</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white">
@@ -53,6 +43,13 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
           <p>&copy; {new Date().getFullYear()} ColourTek Paints. All rights reserved.</p>
+          <div className="mt-4">
+            <ul className="flex justify-center space-x-6">
+              <li><a href="/privacy-policy" className="hover:text-white">Privacy Policy</a></li>
+              <li><a href="/terms-and-conditions" className="hover:text-white">Terms and Conditions</a></li>
+              <li><a href="/sitemap" className="hover:text-white">Site Map</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>

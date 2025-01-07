@@ -112,16 +112,6 @@ const Contact = () => {
             </form>
           </div>
         </div>
-
-        {/* Map */}
-        <div className="mt-12">
-          <div className="bg-gray-200 h-[400px] rounded-lg">
-            {/* Replace with actual map implementation */}
-            <div className="h-full flex items-center justify-center">
-              <p className="text-gray-600">Map will be displayed here</p>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );

@@ -1,0 +1,31 @@
+{
+  "sitemap": [
+    {
+      "category": "Home",
+      "links": [
+        { "name": "Home", "path": "/" }
+      ]
+    },
+    {
+      "category": "Products",
+      "links": [
+        { "name": "Products", "path": "/products" },
+        { "name": "Exterior", "path": "/products/exterior" },
+        { "name": "Interior", "path": "/products/interior" },
+        { "name": "Waterproofing", "path": "/products/waterproofing" },
+        { "name": "Wood & Metal", "path": "/products/wood-metal" },
+        { "name": "Product Details", "path": "/products/details" }
+      ]
+    },
+    {
+      "category": "Other",
+      "links": [
+        { "name": "Solutions", "path": "/solutions" },
+        { "name": "Where to Buy", "path": "/where-to-buy" },
+        { "name": "Contact", "path": "/contact" },
+        { "name": "Privacy Policy", "path": "/privacy-policy" },
+        { "name": "Terms and Conditions", "path": "/terms-and-conditions" }
+      ]
+    }
+  ]
+}
