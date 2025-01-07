@@ -21,9 +21,9 @@ const Hero = () => {
             <Link to={'/products'} className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">
               Explore Products
             </Link>
-            <button className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-black">
+            <Link to={'/where-to-buy'} className="border-2 border-white text-white px-8 py-3 rounded-full hover:bg-white hover:text-black">
               Find a Store
-            </button>
+            </Link>
           </div>
         </div>
       </div>
