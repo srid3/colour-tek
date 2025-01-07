@@ -38,9 +38,9 @@ const Products = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex flex-col justify-end p-6">
                 <h3 className="text-white text-2xl font-semibold mb-2">{product.name}</h3>
                 <p className="text-gray-200 mb-4">{product.description}</p>
-                <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition-colors">
+                {/* <button className="bg-white text-black px-6 py-2 rounded-full hover:bg-blue-600 hover:text-white transition-colors">
                   Learn More
-                </button>
+                </button> */}
               </div>
             </div>
           ))}
