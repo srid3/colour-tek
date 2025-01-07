@@ -1,4 +1,4 @@
-const nodemailer = require('nodemailer');
+import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
   service: 'gmail',
@@ -8,7 +8,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-exports.handler = async (event, context) => {
+export const handler = async (event, context) => {
   if (event.httpMethod !== 'POST') {
     return {
       statusCode: 405,
@@ -16,22 +16,31 @@ exports.handler = async (event, context) => {
     };
   }
 
-  const { name, email, subject, message } = JSON.parse(event.body);
-
-  const mailOptions = {
-    from: email,
-    to: 'sridamul@gmail.com',
-    subject: `New Message from ${name}: ${subject}`,
-    text: `Message: ${message}\nFrom: ${name}\nEmail: ${email}`,
-  };
-
   try {
+    const { name, email, subject, message } = JSON.parse(event.body);
+
+    if (!name || !email || !subject || !message) {
+      return {
+        statusCode: 400,
+        body: JSON.stringify({ message: 'All fields are required' }),
+      };
+    }
+
+    const mailOptions = {
+      from: email,
+      to: 'sridamul@gmail.com',
+      subject: `New Message from ${name}: ${subject}`,
+      text: `Message: ${message}\nFrom: ${name}\nEmail: ${email}`,
+    };
+
     await transporter.sendMail(mailOptions);
+
     return {
       statusCode: 200,
       body: JSON.stringify({ message: 'Email sent successfully!' }),
     };
   } catch (error) {
+    console.error("Error sending email:", error);
     return {
       statusCode: 500,
       body: JSON.stringify({ message: 'Failed to send email', error: error.message }),
