@@ -22,7 +22,7 @@ export const handler = async (event, context) => {
 
     const mailOptions = {
       to: 'sridamul@gmail.com',
-      from: 'colourtek07@gmail.com', // Replace with a verified sender email
+      from: 'colourtek07@gmail.com',
       subject: `New Message from ${name}: ${subject}`,
       text: `Message: ${message}\nFrom: ${name}\nEmail: ${email}`,
     };
