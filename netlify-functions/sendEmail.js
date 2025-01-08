@@ -1,12 +1,6 @@
-import nodemailer from 'nodemailer';
+import sgMail from '@sendgrid/mail';
 
-const transporter = nodemailer.createTransport({
-  service: 'gmail',
-  auth: {
-    user: process.env.EMAIL_USER,
-    pass: process.env.EMAIL_PASS,
-  },
-});
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 export const handler = async (event, context) => {
   if (event.httpMethod !== 'POST') {
@@ -27,13 +21,13 @@ export const handler = async (event, context) => {
     }
 
     const mailOptions = {
-      from: email,
       to: 'sridamul@gmail.com',
+      from: 'colourtek07@gmail.com', // Replace with a verified sender email
       subject: `New Message from ${name}: ${subject}`,
       text: `Message: ${message}\nFrom: ${name}\nEmail: ${email}`,
     };
 
-    await transporter.sendMail(mailOptions);
+    await sgMail.send(mailOptions);
 
     return {
       statusCode: 200,
