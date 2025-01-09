@@ -5,8 +5,14 @@ const Hero = () => {
   return (
     <div className="relative h-screen">
       <div className="absolute inset-0">
-        <img
-          src="https://ik.imagekit.io/colourtek/tr:w-1200/photo-1562259949-e8e7689d7828.avif?updatedAt=1736269341837"
+      <img
+          src="https://ik.imagekit.io/colourtek/photo-1562259949-e8e7689d7828.avif?updatedAt=1736269341837"
+          srcSet="
+            https://ik.imagekit.io/colourtek/tr:w-400/photo-1562259949-e8e7689d7828.avif?updatedAt=1736269341837 400w,
+            https://ik.imagekit.io/colourtek/tr:w-800/photo-1562259949-e8e7689d7828.avif?updatedAt=1736269341837 800w,
+            https://ik.imagekit.io/colourtek/tr:w-1200/photo-1562259949-e8e7689d7828.avif?updatedAt=1736269341837 1200w
+          "
+          sizes="(max-width: 640px) 400px, (max-width: 1024px) 800px, 1200px"
           alt="Interior Design"
           className="w-full h-full object-cover"
         />
