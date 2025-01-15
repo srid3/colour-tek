@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <div className="relative h-screen">
+    <div className="relative h-[80vh] md:h-screen">
       <div className="absolute inset-0">
-      <img
+        <img
           src="https://ik.imagekit.io/colourtek/photo-1562259949-e8e7689d7828.avif?updatedAt=1736269341837"
           srcSet="
             https://ik.imagekit.io/colourtek/tr:w-400/photo-1562259949-e8e7689d7828.avif?updatedAt=1736269341837 400w,
@@ -21,9 +21,9 @@ const Hero = () => {
       
       <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
         <div className="text-white max-w-2xl">
-          <h1 className="text-5xl font-bold mb-6">Transform Your Space with ColourTek</h1>
-          <p className="text-xl mb-8">Experience the perfect blend of innovation and aesthetics with our premium paint solutions.</p>
-          <div className="space-x-4 space-y-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">Transform Your Space with ColourTek</h1>
+          <p className="text-lg md:text-xl mb-8">Experience the perfect blend of innovation and aesthetics with our premium paint solutions.</p>
+          <div className="flex flex-col space-y-4 pr-36 md:flex-row md:space-x-4 md:space-y-0">
             <Link to={'/products'} className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700">
               Explore Products
             </Link>

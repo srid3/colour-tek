@@ -65,7 +65,7 @@ const Contact = () => {
                 <Phone className="h-6 w-6 text-blue-600 mt-1" />
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">+1 (800) 123-4567</p>
+                  <p className="text-gray-600">+91 96299 34686</p>
                 </div>
               </div>
 
@@ -73,7 +73,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-blue-600 mt-1" />
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">support@colourtekpaint.com</p>
+                  <p className="text-gray-600">colourtek.cbe@gmail.com</p>
                 </div>
               </div>
 
@@ -82,8 +82,8 @@ const Contact = () => {
                 <div>
                   <h3 className="font-semibold">Address</h3>
                   <p className="text-gray-600">
-                    123 Paint Street<br />
-                    Colorville, CV 12345
+                    No : 475 - A, Kamarajar Road, 
+                    <br/>Ramanuja Nagar, Coimbatore - 641 015
                   </p>
                 </div>
               </div>
