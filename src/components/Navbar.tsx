@@ -53,12 +53,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">           
           {/* Logo Section */}           
           <Link to="/" className="flex items-center" onClick={handleLinkClick}>             
-            <img src="/logo.png" alt="Colourtek" className="h-12" />    
-            <div className="flex flex-col items-center mt-3">
-              <h1 className="text-3xl font-bold">olour Tek</h1>
-              <div className="w-full h-0.5 bg-yellow-400"></div>
-              <p className="text-sm text-gray-700">Painting Service</p>
-            </div>
+            <img src="/logo.avif" alt="Colourtek" className="h-12" />
           </Link>            
 
           {/* Desktop Nav Links (hidden on small screens) */}           
