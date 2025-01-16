@@ -40,7 +40,7 @@ const WhereToBuy = () => {
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-2xl font-semibold mb-4">Our Location</h2>
         <MapContainer
-          center={[11.0168, 76.9558]}
+          center={[11.018764, 77.022800]}
           zoom={15}
           style={{ height: '500px', width: '100%' }}
         >
@@ -48,10 +48,11 @@ const WhereToBuy = () => {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             attribution="&copy; OpenStreetMap contributors"
           />
-          <Marker position={[37.7749, -122.4194]}>
+          <Marker position={[11.018764, 77.022800]}>
             <Popup>
-              <h3 className="font-semibold">ColourTek Store - Downtown</h3>
-              <p>123 Main Street, Downtown, City 12345</p>
+              <h3 className="font-semibold">ColourTek Painting Service</h3>
+              <p>No : 475 - A, Kamarajar Road, 
+              <br/>Ramanuja Nagar, Coimbatore - 641 015</p>
               <p>📞 +1 (800) 123-4567</p>
               <p>🕒 9:00 AM - 6:00 PM</p>
               <p>⭐ 4.8</p>
