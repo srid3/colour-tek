@@ -11,9 +11,9 @@ export const handler = async (event, context) => {
   }
 
   try {
-    const { name, email, subject, message } = JSON.parse(event.body);
+    const { name, email, phone, subject, message } = JSON.parse(event.body);
 
-    if (!name || !email || !subject || !message) {
+    if (!name || !email || !phone || !subject || !message) {
       return {
         statusCode: 400,
         body: JSON.stringify({ message: 'All fields are required' }),
@@ -24,7 +24,19 @@ export const handler = async (event, context) => {
       to: 'sridamul@gmail.com',
       from: 'colourtek07@gmail.com',
       subject: `New Message from ${name}: ${subject}`,
-      text: `Message: ${message}\nFrom: ${name}\nEmail: ${email}`,
+      text: `
+      Name: ${name}  
+      -------------------------  
+  
+      Message:  
+      =========  
+      ${message}  
+      =========  
+  
+      Contact Information:  
+      Phone: ${phone || 'N/A'}  
+      Email: ${email}  
+    `,
     };
 
     await sgMail.send(mailOptions);
