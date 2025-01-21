@@ -136,7 +136,7 @@ const Contact = () => {
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Phone Number</label>
                 <input
-                  type="number"
+                  type="text"
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}

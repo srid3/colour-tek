@@ -25,16 +25,15 @@ export const handler = async (event, context) => {
       from: 'colourtek07@gmail.com',
       subject: `New Message from ${name}: ${subject}`,
       text: `
-  Name: ${name}
+Name: ${name}
 
-  ***Message***
-  ${message}
+Message: ${message}
 
-  ---------------------
-  Contact Details:
-  Email: ${email}
-  Phone: ${phone}
-  `,
+---------------------
+Contact Details:
+Email: ${email}
+Phone: ${phone}
+`,
     };
 
     await sgMail.send(mailOptions);
